@@ -27,10 +27,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navMain">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#concept">Concept</a></li>
           <li class="nav-item"><a class="nav-link" href="#logo-versions">Logo</a></li>
           <li class="nav-item"><a class="nav-link" href="#favicon-sizes">Favicon Sizes</a></li>
           <li class="nav-item"><a class="nav-link" href="#color-palette">Color Palette</a></li>
           <li class="nav-item"><a class="nav-link" href="#font">Font</a></li>
+          <li class="nav-item"><a class="nav-link" href="#intended-use">Intended Use</a></li>
         </ul>
       </div>
     </div>
@@ -45,16 +47,24 @@
         <span class="hero-tag">Logo Design</span>
         <h1>Logo Design for InkMoon Games</h1>
         <p class="hero-lead">I am a solo dev working on a videogame and created a Logo for myself. Here is a showcase of the Logo in its black and white, color, reverse and favicon versions.</p>
+        <div class="form-check form-switch theme-switch d-inline-flex align-items-center gap-2 mt-3">
+          <input class="form-check-input" type="checkbox" role="switch" id="themeToggle">
+          <label class="form-check-label" for="themeToggle" id="themeLabel">Dark mode</label>
+        </div>
       </header>
 
       <hr class="section-rule">
+
+      <!-- Concept -->
+      <h3 class="section-label" id="concept">Concept</h3>
+      <p class="concept-text mb-5">The InkMoon Games logo shows a full moon with ink spilling across half of its surface and dripping off the edge. The moon represents imagination and atmosphere: a quiet, mysterious glow that draws players into new worlds. The ink represents creativity and craftsmanship, the hand-drawn, artistic process behind every game the studio makes.</p>
 
       <!-- Logo cards -->
       <h3 class="section-label" id="logo-versions">The Logo Versions</h3>
       <div class="row g-4 mt-1 mb-5">
         <div class="col-12">
           <div class="card card-equal">
-            <div class="logo-preview">
+            <div class="logo-preview logo-preview-light">
               <img src="images/Blackandwhite.svg" class="logo-img" alt="Black and white logo">
             </div>
             <div class="card-body">
@@ -66,7 +76,7 @@
 
         <div class="col-12">
           <div class="card card-equal">
-            <div class="logo-preview">
+            <div class="logo-preview logo-preview-light">
               <img src="images/color.svg" class="logo-img" alt="Color variation of the logo">
             </div>
             <div class="card-body">
@@ -90,7 +100,7 @@
 
         <div class="col-12">
           <div class="card card-equal">
-            <div class="logo-preview">
+            <div class="logo-preview logo-preview-light">
               <img src="images/Favicon.svg" class="logo-img logo-img-small" alt="Favicon version of the logo">
             </div>
             <div class="card-body">
@@ -106,7 +116,7 @@
       <div class="row g-4 mt-1 mb-5">
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card size-card">
-            <div class="size-preview"><img src="images/favicons/favicon-16.png" width="16" height="16" alt="Favicon at 16 by 16 pixels"></div>
+            <div class="size-preview"><img src="images/favicons/favicon-16.svg" width="16" height="16" alt="Favicon at 16 by 16 pixels"></div>
             <div class="card-body">
               <h5 class="card-title">16 x 16</h5>
               <p class="card-text">Browser tab icon. The smallest size, shown next to the page title.</p>
@@ -115,7 +125,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card size-card">
-            <div class="size-preview"><img src="images/favicons/favicon-32.png" width="32" height="32" alt="Favicon at 32 by 32 pixels"></div>
+            <div class="size-preview"><img src="images/favicons/favicon-32.svg" width="32" height="32" alt="Favicon at 32 by 32 pixels"></div>
             <div class="card-body">
               <h5 class="card-title">32 x 32</h5>
               <p class="card-text">Sharper tab icon on high-resolution screens, plus bookmarks and the taskbar.</p>
@@ -124,7 +134,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card size-card">
-            <div class="size-preview"><img src="images/favicons/favicon-48.png" width="48" height="48" alt="Favicon at 48 by 48 pixels"></div>
+            <div class="size-preview"><img src="images/favicons/favicon-48.svg" width="48" height="48" alt="Favicon at 48 by 48 pixels"></div>
             <div class="card-body">
               <h5 class="card-title">48 x 48</h5>
               <p class="card-text">Desktop shortcuts and site listings in search results.</p>
@@ -133,7 +143,7 @@
         </div>
         <div class="col-12 col-sm-6 col-lg-3">
           <div class="card size-card">
-            <div class="size-preview"><img src="images/favicons/favicon-180.png" width="180" height="180" alt="Favicon at 180 by 180 pixels"></div>
+            <div class="size-preview"><img src="images/favicons/favicon-180.svg" width="180" height="180" alt="Favicon at 180 by 180 pixels"></div>
             <div class="card-body">
               <h5 class="card-title">180 x 180</h5>
               <p class="card-text">Apple touch icon, used when the site is saved to an iPhone or iPad home screen.</p>
@@ -152,6 +162,67 @@
       <h3 class="section-label" id="font">Font</h3>
       <div class="card spec-card mt-1 mb-5">
         <img src="images/logotext.png" class="spec-img" alt="Logo font: Cizel, weight 400">
+      </div>
+
+      <!-- Intended use -->
+      <h3 class="section-label" id="intended-use">Intended Use</h3>
+      <p class="guide-intro">These guidelines explain how to use the InkMoon Games logo so it stays clear and consistent everywhere it appears.</p>
+      <div class="row g-4 mt-1 mb-4">
+        <div class="col-12 col-lg-6">
+          <div class="card guide-card">
+            <div class="card-body">
+              <h5 class="card-title">Sizes</h5>
+              <ul class="guide-list">
+                <li><strong>Large (400px or wider):</strong> website headers, title screens, posters and banners, where the full logo with its text can be read.</li>
+                <li><strong>Medium (120 to 400px):</strong> store pages, social media posts and menus. Keep the "InkMoon Games" text readable.</li>
+                <li><strong>Small (under 120px):</strong> use the favicon instead of the full logo, since the text becomes too small to read.</li>
+                <li>Always scale the logo proportionally and leave empty space around it, at least the height of the "I" in "Ink".</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card guide-card">
+            <div class="card-body">
+              <h5 class="card-title">Choosing a Version</h5>
+              <ul class="guide-list">
+                <li><strong>Color:</strong> the main version. Use it on light backgrounds whenever full color is available.</li>
+                <li><strong>Black and White:</strong> for print, stamps, documents and any place limited to one color.</li>
+                <li><strong>Reverse:</strong> for dark backgrounds, photos and the dark mode of a page. Pick it whenever the dark logo would blend in.</li>
+                <li><strong>Favicon:</strong> for browser tabs, app icons and any space too small for the full logo.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card guide-card">
+            <div class="card-body">
+              <h5 class="card-title">File Formats</h5>
+              <ul class="guide-list">
+                <li><strong>Use a vector format first (SVG):</strong> it stays sharp at every size, from a tab icon to a billboard, and has a small file size.</li>
+                <li>Use PNG only where SVG is not supported.</li>
+                <li>Avoid JPG for the logo. It has no transparent background and adds blur around the edges.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="card guide-card guide-card-dont">
+            <div class="card-body">
+              <h5 class="card-title">Don'ts</h5>
+              <ul class="guide-list guide-list-dont">
+                <li>Don't change the colors of the logo.</li>
+                <li>Don't add effects such as shadows, glows, outlines or gradients.</li>
+                <li>Don't overlap the logo with text or other graphics.</li>
+                <li>Don't stretch, squash, rotate or crop the logo.</li>
+                <li>Don't place a version on a background that makes it hard to see, such as the color logo on a dark photo.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -180,6 +251,30 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     (function () {
+      // Light/dark toggle: swaps the Bootstrap theme and the logo SVGs
+      var root = document.documentElement;
+      var toggle = document.getElementById('themeToggle');
+      var label = document.getElementById('themeLabel');
+
+      function apply(theme) {
+        root.setAttribute('data-bs-theme', theme);
+        toggle.checked = theme === 'dark';
+        label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+        document.querySelectorAll('.theme-logo').forEach(function (img) {
+          img.src = img.getAttribute('data-' + theme);
+        });
+      }
+
+      var saved = null;
+      try { saved = localStorage.getItem('theme'); } catch (e) {}
+      apply(saved === 'dark' ? 'dark' : 'light');
+
+      toggle.addEventListener('change', function () {
+        var theme = toggle.checked ? 'dark' : 'light';
+        apply(theme);
+        try { localStorage.setItem('theme', theme); } catch (e) {}
+      });
+
       // Click a card's logo to view it larger
       var modalEl = document.getElementById('logoModal');
       var modal = new bootstrap.Modal(modalEl);
@@ -194,6 +289,7 @@
           modalImg.alt = img.alt;
           document.getElementById('logoModalLabel').textContent = title;
           modalBody.classList.toggle('logo-modal-reverse', preview.classList.contains('logo-preview-reverse'));
+          modalBody.classList.toggle('logo-modal-light', preview.classList.contains('logo-preview-light'));
           modal.show();
         });
       });
