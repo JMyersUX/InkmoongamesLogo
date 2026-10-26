@@ -1,0 +1,335 @@
+/* ==========================================================================
+   JustinMyers_BootstrapTutorial - shared stylesheet
+   Font: Oxygen (Google Fonts, 400 & 700 weights only)
+   Type scale: Major Second (ratio 1.125), base 1rem
+   ========================================================================== */
+
+:root {
+  --navy: #06111C;
+  --page-bg: #EDEDED;
+  --ink: #3F3F3F;
+  --accent: #A855F7;
+  --nav-link: #3F3F3F;
+  --nav-link-active: #000000;
+  --btn-orange: #FB8500;
+  --btn-blue: #3B82F6;
+  --grid-col-1: #FDE68A;
+  --grid-col-2: #93C5FD;
+  --grid-col-3: #6EE7B7;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* Keep section headings clear of the sticky navbar when jumped to */
+.section-label {
+  scroll-margin-top: 80px;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  background-color: var(--page-bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+/* Major Second (1.125) type scale */
+h6 { font-size: 1.125rem; }
+h5 { font-size: 1.266rem; }
+h4 { font-size: 1.424rem; }
+h3 { font-size: 1.602rem; }
+h2 { font-size: 1.802rem; }
+h1 { font-size: 2.027rem; }
+
+/* Layout spacing: 4px between sticky navbar and content container */
+.content-container {
+  margin-top: 4px;
+}
+
+/* Footer */
+.site-footer {
+  flex-shrink: 0;
+  background-color: var(--page-bg);
+  color: var(--ink);
+  border-top: 1px solid #c9c9c9;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: var(--page-bg);
+  font-family: 'Questrial', sans-serif;
+}
+
+.navbar-custom .navbar-brand {
+  color: #000;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.navbar-custom .nav-link {
+  color: var(--nav-link);
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: var(--nav-link-active);
+}
+
+.navbar-custom .nav-link.active {
+  color: var(--nav-link-active);
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: var(--navy);
+}
+
+.navbar-custom .dropdown-item {
+  color: var(--nav-link);
+}
+
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus,
+.navbar-custom .dropdown-item.active {
+  color: var(--nav-link-active);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: var(--nav-link);
+}
+
+/* Outlined pill button */
+.btn-pixel {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 50rem;
+  color: #000;
+  font-family: 'Questrial', sans-serif;
+  padding: 0.4rem 1.25rem;
+}
+
+.btn-pixel:hover,
+.btn-pixel:focus {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 4rem 0 3rem;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 0.3rem 1.1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--ink);
+  border-radius: 50rem;
+  font-family: 'Questrial', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin-bottom: 1.25rem;
+}
+
+.hero-lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.section-rule {
+  border-top: 2px solid #9a9a9a;
+  opacity: 1;
+  margin: 0 0 1.5rem;
+}
+
+.section-label {
+  font-family: 'Questrial', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Cards page */
+.card-equal {
+  height: 100%;
+}
+
+.card-img-fixed {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+}
+
+/* Logo page */
+.card-equal {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.card-equal .card-title {
+  font-size: 1.1rem;
+}
+
+.card-equal .card-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.logo-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(280px, 55vh, 520px);
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.logo-preview {
+  cursor: zoom-in;
+}
+
+/* Color palette + font showcase cards */
+.spec-card {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Favicon size cards (images shown at their real pixel size) */
+.size-card {
+  height: 100%;
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.size-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  background-color: #f7f7f7;
+}
+
+.size-card .card-title {
+  font-size: 1.1rem;
+}
+
+.spec-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo-modal-body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.logo-modal-reverse {
+  background-color: var(--navy);
+}
+
+.logo-modal-img {
+  width: 100%;
+  max-width: 560px;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+.logo-preview-reverse {
+  background-color: var(--navy);
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.logo-img-small {
+  width: 160px;
+  height: 160px;
+}
+
+.navbar-logo {
+  height: 32px;
+  width: 32px;
+}
+
+/* Gallery page */
+.filter-btn {
+  background-color: transparent;
+  border: 2px solid var(--btn-orange);
+  color: var(--btn-orange);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--btn-blue);
+  border-color: var(--btn-blue);
+  color: #fff;
+}
+
+.filter-btn.active {
+  background-color: var(--btn-orange);
+  border-color: var(--btn-orange);
+  color: #fff;
+}
+
+.gallery-img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+  image-rendering: pixelated;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* Grid challenge pages */
+.grid-col {
+  color: #06111C;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grid-col-1 { background-color: var(--grid-col-1); }
+.grid-col-2 { background-color: var(--grid-col-2); }
+.grid-col-3 { background-color: var(--grid-col-3); }
